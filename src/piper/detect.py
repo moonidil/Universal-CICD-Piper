@@ -40,10 +40,10 @@ def scan(root="."):
     #pick framework (next.js has priority over vue)
     framework = "next" if found.get("next") else "vue" if found.get("vue") else None
     #pick deployment target
-    deploy = ("vercel" if found.get("vercel") else 
-            "netlify" if found.get("netlify") else 
-            "heroku" if found.get("heroku") else 
-            "railway" if found.get("railway") else 
+    deploy = ("vercel" if found.get("vercel") else
+            "netlify" if found.get("netlify") else
+            "heroku" if found.get("heroku") else
+            "railway" if found.get("railway") else
             "docker" if found.get("docker") else None)
 
     return {
