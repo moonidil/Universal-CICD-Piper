@@ -1,0 +1,10 @@
+__pycache__/
+.venv/
+dist/
+.build/
+.coverage
+htmlcov/
+*.pyc
+.DS_Store
+.env
+.envrc
